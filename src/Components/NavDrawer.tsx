@@ -1,5 +1,6 @@
 import React from 'react';
-import { Drawer, Hidden, Theme, createStyles, makeStyles } from '@material-ui/core';
+import { Drawer, Hidden, Theme, createStyles, makeStyles, List, ListItem, Link } from '@material-ui/core';
+import Nav from './Nav';
 
 interface IProps {
   isDrawerOpen: boolean,
@@ -10,18 +11,30 @@ export default function NavDrawer(props: IProps) {
   const classes = makeStyles((theme: Theme) => 
     createStyles({
       drawerPaperSm: {
-        width: '80%'
+        width: '80%',
+        backgroundColor: theme.palette.primary.main,
+        border: 'none'
       },
       drawerPaper: {
-        width: 300
+        width: 300,
+        backgroundColor: theme.palette.primary.main,
+        border: 'none',
+        boxShadow: 'black 0 0 10px'
       },
       drawer: {
         width: 300
+      },
+      content: {
+        backgroundColor: theme.palette.primary.main
       }
     })
   )();
 
-  const content = <p>Placeholder for drawer content</p>
+  const content = (
+    <div className={classes.content}>
+      <Nav />
+    </div>
+  );
 
   return (
     <div>

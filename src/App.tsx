@@ -3,8 +3,7 @@ import {AppBar, Toolbar, makeStyles, createStyles, Theme } from '@material-ui/co
 import './App.css';
 import TopBar from './Components/TopBar';
 import NavDrawer from './Components/NavDrawer';
-import { CSSProperties } from '@material-ui/core/styles/withStyles';
-import { create } from 'domain';
+import Content from './Components/Content';
 
 function App() {
   const [isDrawerOpen, setIsDrawerOpen] = useState<boolean>(false);
@@ -15,10 +14,13 @@ function App() {
       <TopBar
         handleDrawerToggle={handleDrawerToggle}
       />
-      <NavDrawer 
-        isDrawerOpen={isDrawerOpen}
-        handleDrawerToggle={handleDrawerToggle}
-      />
+      <div>
+        <NavDrawer 
+          isDrawerOpen={isDrawerOpen}
+          handleDrawerToggle={handleDrawerToggle}
+        />
+        <Content/>
+      </div>
     </div>
   )
 }

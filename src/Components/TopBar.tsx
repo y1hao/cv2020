@@ -8,15 +8,19 @@ interface IProps {
 }
 
 export default function TopBar(props: IProps) {
+  const rootStyle: CSSProperties = {
+    display: 'flex',
+    justifyContent: 'space-between'
+  }
   return (
     <Hidden smUp>
       <AppBar position="fixed">
-        <Toolbar>
+        <Toolbar style={rootStyle}>
           <IconButton onClick={props.handleDrawerToggle}>
             <Menu />
           </IconButton>
-          <Typography variant="h4">
-            Placeholder
+          <Typography variant="h6" >
+            Yihao Wang's CV
           </Typography>
         </Toolbar>
       </AppBar>

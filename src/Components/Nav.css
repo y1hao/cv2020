@@ -1,0 +1,8 @@
+a {
+    display: block
+}
+
+.is-current {
+    color: green;
+    font-size: 25px;
+}
