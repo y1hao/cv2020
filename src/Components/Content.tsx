@@ -11,7 +11,7 @@ export default function Content(props: IProps) {
     createStyles({
       root: {
         [theme.breakpoints.up('sm')]: {
-          marginLeft: 300
+          marginLeft: 350
         },
         [theme.breakpoints.down('xs')]: {
           marginTop: 50

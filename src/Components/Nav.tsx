@@ -17,6 +17,7 @@ export default function Nav() {
         "aboutFuture"
       ]} 
       currentClassName="is-current"
+      className="scroll-spy"
     >
       <a href="#aboutMe">About me</a>
       <a href="#pekingUniversity">Peking University</a>

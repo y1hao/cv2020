@@ -1,8 +1,26 @@
-a {
-    display: block
+.scroll-spy > a {
+    display: block;
+    box-sizing: border-box;
+    padding-left: 15px;
+    color: white;
+    text-decoration: none;
+    border-left: rgba(0,0,0,0) solid 5px;
+    text-align: left;
 }
 
-.is-current {
-    color: green;
-    font-size: 25px;
+.scroll-spy > a:hover {
+    font-weight: bold;
+}
+
+.scroll-spy > a:visited {
+    color: white;
+}
+
+.scroll-spy > a:active {
+    font-weight: bolder;
+}
+
+.scroll-spy > .is-current {
+    border-left: white solid 5px;
+    font-weight: bold;
 }
