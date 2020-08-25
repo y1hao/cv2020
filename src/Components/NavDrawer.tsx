@@ -85,7 +85,7 @@ export default function NavDrawer(props: IProps) {
   const content = (
     <div className={classes.content}>
       <div className={classes.profileWrapper}>
-        <Tooltip arrow title={<Typography>Hi &#9995; I am a programming enthusiast &#128515; </Typography>}>
+        <Tooltip arrow title={<Typography>Hi 👋 I am a programming enthusiast &#128515; </Typography>}>
           <img src={avatar} className={classes.avatar} />
         </Tooltip>
         <div className={classes.name}>Yihao Wang</div>

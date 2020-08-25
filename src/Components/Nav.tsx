@@ -24,7 +24,7 @@ export default function Nav() {
       <a href="#victoriaUniversity">Victoria University of Wellington</a>
       <a href="#universityOfAuckland">University of Auckland</a>
       <a href="#nandToTetris">Project - Nand to Tetris</a>
-      <a href="#div">Project - div</a>
+      <a href="#div">Project - The div language</a>
       <a href="#keyPoint">Project - KeyPoint</a>
       <a href="#colorfulLife">Project - Colorful Life</a>
       <a href="#aboutFuture">About future</a>
