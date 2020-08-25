@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles, Theme, createStyles, Tooltip, Typography } from '@material-ui/core';
-import { SignalWifi1BarLockSharp } from '@material-ui/icons';
+import { SignalWifi1BarLockSharp, DriveEta } from '@material-ui/icons';
 
 const Fade = require('react-reveal/Fade');
 
@@ -86,8 +86,7 @@ export default function Content() {
         }
       },
       contentWrapper: {
-        display: 'grid',
-
+        paddingTop: '10vh'
       },
       description: {
         fontSize: '1.3vw',
@@ -151,10 +150,10 @@ export default function Content() {
           <Fade up>
             <div className={classes.description}>
               <br />
-              👋 Hello! Thank you for visiting this web page. 🥳 
+              👋 Hello! Thank you for visiting this web page. 🎉 
               My name is <span className={classes.emphasis}>Yihao Wang</span>. I am a recent graduate  
               from the University of Auckland with a <span className={classes.emphasis}>Post-Graduate Certificate in IT</span>. 
-              Before this, I also got a Bachelor's Degree in Science and a Master's Degree in Accounting (with Distinction).
+              Before this, I also got a Bachelor's Degree of Science and a Master's Degree in Accounting (with Distinction).
               <br />
               I have been learning programming for about 2 years now, and each day I am becoming a bit better at it and a bit more passionate about it.
               I enjoy programming in  
@@ -183,16 +182,40 @@ export default function Content() {
               </span>
             </div>
           </Fade>
-          <Fade>
+          <Fade up>
             <div className={classes.contentWrapper}>
-              
+              <div className={classes.description}>
+                <br /><br />
+                In July of 2017, I graduated with a 
+                <span className={classes.emphasis}> Bachelor's Degree of Science in Psychology 👨‍🎓 </span> 
+                from <span className={classes.emphasis}> Peking University </span>, which is one of the 
+                <span className={classes.emphasis}> top two </span> universities in China.
+                <br /><br />
+                Though my major was not in CS, I had some exposure to programming, as my courses includes
+                <span className={classes.emphasis}> Introduction to Computing Theories </span> and
+                <span className={classes.emphasis}> Data Structure and Algorithms </span>. 
+                I learned a bit about the <span className={classes.emphasis}> C Programming Language </span>
+                and <span className={classes.emphasis}> Matlab </span>.
+              </div>
             </div>
           </Fade>
         </section>
         <section className={classes.page}>
           <Fade>
             <div className={classes.contentWrapper}>
-              
+              <div className={classes.description}>
+                <br /><br /><br />
+                I also had my first internship during this period.
+                <br />
+                I worked as an HR intern, and my daily job was to screen CVs and interview candidates. 
+                <br /><br />
+                Each month, I needed to help my mentor make a monthly report, which was kind of laborious, because I needed to calculate all kinds of 
+                ratios from piles of data exported from the company's system, and turn them into charts 📊 to put on slides. So I managed to write an 
+                <span className={classes.emphasis}> Excel Macro </span> using <span className={classes.emphasis}> VBA </span>
+                to automatically get this reporting job done. That program was used for a long time even after I finished that intern. This was 
+                my first experience of using programming to solve problems. I did not think of being a professional developer then. But I loved the feeling
+                of achievement. It was good.
+              </div>
             </div>
           </Fade>
         </section>
