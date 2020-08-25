@@ -2,23 +2,20 @@ import React from 'react';
 import Page from './Page';
 import { makeStyles, Theme, createStyles } from '@material-ui/core';
 
-interface IProps {
-
-}
-
-export default function Content(props: IProps) {
+export default function Content() {
   const classes = makeStyles((theme: Theme) =>
     createStyles({
       root: {
         [theme.breakpoints.up('sm')]: {
           marginLeft: 350
-        },
-        [theme.breakpoints.down('xs')]: {
-          marginTop: 50
         }
       },
       page: {
-        minHeight: '100vh'
+        minHeight: '100vh',
+        scrollSnapAlign: 'start',
+        [theme.breakpoints.down('xs')]: {
+          paddingTop: 50
+        }
       }
     })
   )();
