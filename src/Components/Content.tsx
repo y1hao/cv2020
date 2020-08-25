@@ -1,9 +1,6 @@
 import React from 'react';
 import { makeStyles, Theme, createStyles } from '@material-ui/core';
 
-const Pulse = require('react-reveal/Pulse');
-const Reveal = require('react-reveal/Reveal');
-const Zoom = require('react-reveal/Zoom');
 const Fade = require('react-reveal/Fade');
 
 export default function Content() {
@@ -17,8 +14,10 @@ export default function Content() {
       page: {
         minHeight: '100vh',
         scrollSnapAlign: 'start',
+        position: 'relative',
         [theme.breakpoints.down('sm')]: {
-          paddingTop: 50
+          paddingTop: 50,
+          minHeight: 'calc(100vh - 50px)'
         }
       },
       sectionName: {
@@ -40,7 +39,7 @@ export default function Content() {
         margin: 0,
         fontSize: '4vw',
         fontWeight: 'bolder',
-        textShadow: '#ccc 0 0 5px',
+        textShadow: '#bbb 0 0 5px',
         color: theme.palette.primary.light,
         [theme.breakpoints.down('sm')]: {
           fontSize: '5vw'
@@ -78,12 +77,16 @@ export default function Content() {
         fontSize: '5.5vw',
         textAlign: 'center',
         paddingTop: '5.5vw',
-        fontWeight: 'normal',
+        fontWeight: 'lighter',
         color: theme.palette.primary.light,
-        textShadow: '#aaa 0 0 10px',
+        textShadow: '#bbb 0 0 10px',
         [theme.breakpoints.down('sm')]: {
           fontSize: '8vw'
         }
+      },
+      contentWrapper: {
+        display: 'grid',
+        
       },
       description: {
 
@@ -93,6 +96,19 @@ export default function Content() {
       },
       link: {
 
+      },
+      transition: {
+        position: 'absolute',
+        bottom: '2vw',
+        fontSize: '1.5vw',
+        margin: 'auto',
+        width: '100%',
+        color: 'white',
+        textShadow: 'black 0 0 10px',
+        textAlign: 'center',
+        [theme.breakpoints.down('sm')]: {
+          fontSize: '3vw'
+        }
       }
     })
   )();
@@ -102,6 +118,9 @@ export default function Content() {
       <section id="aboutMe" className={classes.page}>
         <Fade up>
           <span className={classes.largeTitle}>About Me</span>
+        </Fade>
+        <Fade up>
+          <div className={classes.transition}>👇 Scroll down to see my education background</div>
         </Fade>
       </section>
       <section id="pekingUniversity" className={classes.page}>
@@ -141,6 +160,9 @@ export default function Content() {
             <span className={classes.titleDiscription}>2020.3 - 2020.7</span>
             </span>
           </div>
+        </Fade>
+        <Fade up>
+          <div className={classes.transition}>👇 Scroll down to see my programming projects</div>
         </Fade>
       </section>
       <section id="nandToTetris" className={classes.page}>
