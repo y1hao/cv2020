@@ -1,5 +1,5 @@
 import React from 'react';
-import { Drawer, Hidden, Theme, createStyles, makeStyles, List, ListItem, Link } from '@material-ui/core';
+import { Drawer, Hidden, Theme, createStyles, makeStyles, List, ListItem, Link, Tooltip, Typography } from '@material-ui/core';
 import Nav from './Nav';
 import avatar from '../images/avatar.jpg';
 import { MailOutline, PhoneIphone, GitHub, LinkedIn } from '@material-ui/icons';
@@ -45,11 +45,14 @@ export default function NavDrawer(props: IProps) {
         marginTop: 20,
         borderWidth: 7,
         borderStyle: 'solid',
-        borderColor: theme.palette.primary.dark
+        borderColor: theme.palette.primary.dark,
+        boxShadow: 'black 0 0 10px',
+        '&:hover': {
+          boxShadow: 'black 0 0 20px'
+        }
       },
       name: {
         fontSize: 30,
-        fontWeight: 'lighter',
         textAlign: 'center',
         margin: 'auto',
         marginBottom: 10,
@@ -81,7 +84,9 @@ export default function NavDrawer(props: IProps) {
   const content = (
     <div className={classes.content}>
       <div className={classes.profileWrapper}>
-        <img src={avatar} className={classes.avatar}></img>
+        <Tooltip arrow title={<Typography>Hi &#9995; I am a programming enthusiast &#128515; </Typography>}>
+          <img src={avatar} className={classes.avatar} />
+        </Tooltip>
         <div className={classes.name}>Yihao Wang</div>
         <div className={classes.contact}><MailOutline className={classes.icon} /> yesiamyihao@gmail.com</div>
         <div className={classes.contact}><PhoneIphone className={classes.icon} /> 021 0806 1979</div>

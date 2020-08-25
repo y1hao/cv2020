@@ -4,12 +4,13 @@
     padding-left: 15px;
     color: white;
     text-decoration: none;
-    border-left: rgba(0,0,0,0) solid 5px;
+    border-left: transparent solid 5px;
     text-align: left;
+    font-weight: lighter;
 }
 
-.scroll-spy > a:hover {
-    font-weight: bold;
+.scroll-spy > a:hover:not(.is-current) {
+    font-weight: normal;
 }
 
 .scroll-spy > a:visited {
@@ -17,10 +18,10 @@
 }
 
 .scroll-spy > a:active {
-    font-weight: bolder;
+    font-weight: bold;
 }
 
 .scroll-spy > .is-current {
     border-left: white solid 5px;
-    font-weight: bold;
+    font-weight: bolder;
 }
