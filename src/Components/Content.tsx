@@ -6,14 +6,14 @@ export default function Content() {
   const classes = makeStyles((theme: Theme) =>
     createStyles({
       root: {
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up('md')]: {
           marginLeft: 350
         }
       },
       page: {
         minHeight: '100vh',
         scrollSnapAlign: 'start',
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.down('sm')]: {
           paddingTop: 50
         }
       }

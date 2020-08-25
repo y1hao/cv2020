@@ -13,7 +13,7 @@ export default function TopBar(props: IProps) {
     justifyContent: 'space-between'
   }
   return (
-    <Hidden smUp>
+    <Hidden mdUp>
       <AppBar position="fixed">
         <Toolbar style={rootStyle}>
           <IconButton onClick={props.handleDrawerToggle}>

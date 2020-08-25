@@ -13,7 +13,8 @@ export default function NavDrawer(props: IProps) {
   const classes = makeStyles((theme: Theme) => 
     createStyles({
       drawerPaperSm: {
-        width: '80%',
+        width: 350,
+        maxWidth: '80%',
         backgroundColor: theme.palette.primary.main,
         border: 'none'
       },
@@ -24,7 +25,7 @@ export default function NavDrawer(props: IProps) {
         boxShadow: 'black 0 0 10px'
       },
       drawer: {
-        width: 300
+        width: 350
       },
       content: {
         backgroundColor: theme.palette.primary.main,
@@ -99,7 +100,7 @@ export default function NavDrawer(props: IProps) {
 
   return (
     <div>
-      <Hidden smUp>
+      <Hidden mdUp>
         <Drawer
           classes={{paper: classes.drawerPaperSm}}
           variant="temporary"
@@ -110,7 +111,7 @@ export default function NavDrawer(props: IProps) {
           {content}
         </Drawer>
       </Hidden>
-      <Hidden xsDown>
+      <Hidden smDown>
         <Drawer
           className={classes.drawer}
           classes={{paper: classes.drawerPaper}}
