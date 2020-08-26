@@ -68,8 +68,7 @@ export default function Content() {
       },
       titleWrapper: {
         marginLeft: '10%',
-        marginTop: '1em',
-        paddingTop: '1em',
+        paddingTop: '5%',
         display: 'flex',
         flexDirection: 'column'
       },
@@ -151,6 +150,7 @@ export default function Content() {
             <div className={classes.description}>
               <br />
               👋 Hello! Thank you for visiting this web page. 🎉 
+              <br />
               My name is <span className={classes.emphasis}>Yihao Wang</span>. I am a recent graduate  
               from the University of Auckland with a <span className={classes.emphasis}>Post-Graduate Certificate in IT</span>. 
               Before this, I also got a Bachelor's Degree of Science and a Master's Degree in Accounting (with Distinction).
@@ -161,7 +161,7 @@ export default function Content() {
               and I have also written code in <span className={classes.emphasis}>C</span>, <span className={classes.emphasis}>Ruby</span> and <span className={classes.emphasis}>SML</span>.
               I am familiar with <span className={classes.emphasis}>React</span> and <span className={classes.emphasis}>.Net Core</span>, and I am hoping to become a <span className={classes.emphasis}>full-stack developer</span> in the near future.
               <br /><br />
-              I created this web page using React with Typescript. This is a chronological introduction of myself that I hope may help you know more about me. 😃
+              I created this web page using React with Typescript. This is a chronological introduction of myself that I hope may help you know more about me. 
             </div>
           </Fade>
           <Fade up>
@@ -185,9 +185,9 @@ export default function Content() {
           <Fade up>
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
-                <br /><br />
+                <br />
                 In July of 2017, I graduated with a 
-                <span className={classes.emphasis}> Bachelor's Degree of Science in Psychology 👨‍🎓 </span> 
+                <span className={classes.emphasis}> Bachelor's Degree of Science in Psychology </span> 
                 from <span className={classes.emphasis}> Peking University </span>, which is one of the 
                 <span className={classes.emphasis}> top two </span> universities in China.
                 <br /><br />
@@ -205,12 +205,12 @@ export default function Content() {
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
                 <br /><br /><br />
-                I also had my first internship during this period.
+                I also had my first <span className={classes.emphasis}>internship </span> during this period.
                 <br />
-                I worked as an HR intern, and my daily job was to screen CVs and interview candidates. 
+                I worked as an HR, and my daily job was to screen CVs and interview candidates. 
                 <br /><br />
                 Each month, I needed to help my mentor make a monthly report, which was kind of laborious, because I needed to calculate all kinds of 
-                ratios from piles of data exported from the company's system, and turn them into charts 📊 to put on slides. So I managed to write an 
+                ratios from piles of data exported from the company's system, and turn them into charts to put on slides. So I managed to write an 
                 <span className={classes.emphasis}> Excel Macro </span> using <span className={classes.emphasis}> VBA </span>
                 to automatically get this reporting job done. That program was used for a long time even after I finished that intern. This was 
                 my first experience of using programming to solve problems. I did not think of being a professional developer then. But I loved the feeling
@@ -233,6 +233,35 @@ export default function Content() {
               </span>
             </div>
           </Fade>
+          <Fade up>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                After I graduated from Peking University, I came to New Zealand, and I love this country.
+                <br /><br /> 
+                I began studying towards a Master's Degree in Professional Accounting in Victoria University of Wellington.
+                Accounting was a completely new area for me, but I managed to graduate with distinction. 
+                Because of my good academic performance, I recieved CPA Austraia Award and Top Student, Master of Professional Accounting Award.
+                <br /><br />
+                Despite that I am no longer looking for a job in accounting now, I still regard these as great encouragement to me.
+                They show that I am able to learn new things well and quickly, and most importantly, that I enjoy learning new things,
+              </div>
+            </div>
+          </Fade>
+        </section>
+        <section className={classes.page}>
+          <Fade up>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                It was during this period of time that I made up my mind to become a professional developer.
+                I found myself more interested in understanding how a piece of accounting software worked than learning how to use it, 
+                automating things with programs than memorising the rules, and solving problems with passion and creativity than blindly obeying authorities.
+                <br /><br />
+                So, in the last two trimesters of program, I started seriously learning programming on my own. I got myself familiar with 
+                HTML, CSS and JavaScript. I studied through K&R's awesome book The C Programming Language. I also took a wonderful course 
+                on Coursera on computer architecture and compilers - From Nand to Tetris, which is one of the top courses on that platform.
+              </div>
+            </div>
+          </Fade>
         </section>
       </section>
       <section id="universityOfAuckland">
@@ -246,6 +275,29 @@ export default function Content() {
                 University of Auckland
             <span className={classes.titleDiscription}>2020.3 - 2020.7</span>
               </span>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                Wanting to learn more of programming, I enrolled in the Post-Graduate Certificate in Information Technology program in Auckland University.
+                This program consisted of two courses: Programming for Industry which taught Java, and Web Technologies which taught HTML, CSS, JavaScript and Git.
+                <br /><br />
+                As I was already familiar with some of these topics, I used my spare time to learn more. I finished Princeton University's Algorithms and Washington University's 
+                Programming Languages (which taught functional programming) on Coursera. And I also learned some C#.
+              </div>
+            </div>
+          </Fade>
+        </section>
+        <section className={classes.page}>
+          <Fade up>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                I graduated with A+ on both courses. After graduation, I took some time to get myself familiar with Typescript, React, .Net Core and Azure, 
+                in order to make myself feel ready to start out as a developer in the industry.
+                <br /><br />
+                During my learning of programming, I have made some projects which I am proud of, and I would like to share these with you.
+              </div>
             </div>
           </Fade>
           <Fade up>
