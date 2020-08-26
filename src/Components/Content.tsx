@@ -238,12 +238,12 @@ export default function Content() {
               <div className={classes.description}>
                 After I graduated from Peking University, I came to New Zealand, and I love this country.
                 <br /><br /> 
-                I began studying towards a Master's Degree in Professional Accounting in Victoria University of Wellington.
-                Accounting was a completely new area for me, but I managed to graduate with distinction. 
+                I began studying towards a <span className={classes.emphasis}> Master's Degree in Professional Accounting </span> in <span className={classes.emphasis}> Victoria University of Wellington </span>.
+                Accounting was a completely new area for me, but I managed to graduate with <span className={classes.emphasis}> distinction </span>. 
                 Because of my good academic performance, I recieved CPA Austraia Award and Top Student, Master of Professional Accounting Award.
                 <br /><br />
                 Despite that I am no longer looking for a job in accounting now, I still regard these as great encouragement to me.
-                They show that I am able to learn new things well and quickly, and most importantly, that I enjoy learning new things,
+                They show that I am able to <span className={classes.emphasis}> learn new things well and quickly </span>, and most importantly, that I enjoy doing so.
               </div>
             </div>
           </Fade>
@@ -252,12 +252,13 @@ export default function Content() {
           <Fade up>
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
-                It was during this period of time that I made up my mind to become a professional developer.
+                It was during this period of time that I made up my mind to <span className={classes.emphasis}> become a professional developer </span>.
                 I found myself more interested in understanding how a piece of accounting software worked than learning how to use it, 
                 automating things with programs than memorising the rules, and solving problems with passion and creativity than blindly obeying authorities.
                 <br /><br />
                 So, in the last two trimesters of program, I started seriously learning programming on my own. I got myself familiar with 
-                HTML, CSS and JavaScript. I studied through K&R's awesome book The C Programming Language. I also took a wonderful course 
+                <span className={classes.emphasis}> HTML </span>, <span className={classes.emphasis}> CSS </span> and <span className={classes.emphasis}> JavaScript </span>. 
+                I studied through K&R's awesome book <span className={classes.emphasis}> The C Programming Language </span>. I also took a wonderful course 
                 on Coursera on computer architecture and compilers - From Nand to Tetris, which is one of the top courses on that platform.
               </div>
             </div>
@@ -280,11 +281,11 @@ export default function Content() {
           <Fade up>
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
-                Wanting to learn more of programming, I enrolled in the Post-Graduate Certificate in Information Technology program in Auckland University.
+                Wanting to learn more of programming, I enrolled in the <span className={classes.emphasis}> Post-Graduate Certificate in Information Technology </span> program in <span className={classes.emphasis}> University of Auckland </span>.
                 This program consisted of two courses: Programming for Industry which taught Java, and Web Technologies which taught HTML, CSS, JavaScript and Git.
                 <br /><br />
-                As I was already familiar with some of these topics, I used my spare time to learn more. I finished Princeton University's Algorithms and Washington University's 
-                Programming Languages (which taught functional programming) on Coursera. And I also learned some C#.
+                As I was already familiar with some of these topics, I used my spare time to learn more. I finished Princeton University's <span className={classes.emphasis}> Algorithms </span> and Washington University's 
+                <span className={classes.emphasis}> Programming Languages </span> (which taught functional programming) on Coursera. And I also learned some C#.
               </div>
             </div>
           </Fade>
@@ -293,7 +294,8 @@ export default function Content() {
           <Fade up>
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
-                I graduated with A+ on both courses. After graduation, I took some time to get myself familiar with Typescript, React, .Net Core and Azure, 
+                I graduated with <span className={classes.emphasis}> A+ </span> on both courses. After graduation, 
+                I took some time to get myself familiar with <span className={classes.emphasis}> Typescript </span>, <span className={classes.emphasis}> React </span>, <span className={classes.emphasis}> .Net Core </span> and <span className={classes.emphasis}> Azure </span>, 
                 in order to make myself feel ready to start out as a developer in the industry.
                 <br /><br />
                 During my learning of programming, I have made some projects which I am proud of, and I would like to share these with you.
