@@ -1,6 +1,8 @@
 import React from 'react';
 import { makeStyles, Theme, createStyles, Tooltip, Typography } from '@material-ui/core';
 import { SignalWifi1BarLockSharp, DriveEta } from '@material-ui/icons';
+import game from '../images/game.png';
+import keyPoint from '../images/KeyPoint.png';
 
 const Fade = require('react-reveal/Fade');
 
@@ -85,13 +87,14 @@ export default function Content() {
         }
       },
       contentWrapper: {
-        paddingTop: '10vh'
+        paddingTop: '8vh',
+        width: '80%',
+        margin: 'auto'
       },
       description: {
         fontSize: '1.3vw',
         color: 'black',
         textAlign: 'center',
-        width: '80%',
         margin: 'auto',
         lineHeight: '160%',
         fontWeight: 'lighter',
@@ -104,7 +107,8 @@ export default function Content() {
       },
       emphasis: {
         color: theme.palette.primary.light,
-        fontWeight: 'normal'
+        fontWeight: 'normal',
+        textShadow: '#bbb 0 0 2px'
       },
       link: {
         color: theme.palette.success.light,
@@ -113,6 +117,7 @@ export default function Content() {
         '&:hover': {
           color: theme.palette.success.light,
           textDecoration: `underline solid 1px ${theme.palette.success.light}`,
+          textShadow: '#bbb 0 0 2px'
         },
         '&:visited': {
           color: theme.palette.success.light,
@@ -135,6 +140,17 @@ export default function Content() {
         [theme.breakpoints.down('xs')]: {
           fontSize: '3vw'
         }
+      },
+      media: {
+        marginTop: '5vh',
+        marginBottom: '5vh',
+        width: 300,
+        margin: 'auto',
+        display: 'block',
+        boxShadow: '#ccc 0 0 10px',
+        [theme.breakpoints.down('xs')]: {
+          width: '80%'
+        }
       }
     })
   )();
@@ -147,21 +163,22 @@ export default function Content() {
             <span className={classes.largeTitle}>About Me</span>
           </Fade>
           <Fade up>
-            <div className={classes.description}>
-              <br />
-              👋 Hello! Thank you for visiting this web page. 🎉 
-              <br />
-              My name is <span className={classes.emphasis}>Yihao Wang</span>. I am a recent graduate  
-              from the University of Auckland with a <span className={classes.emphasis}>Post-Graduate Certificate in IT</span>. 
-              Before this, I also got a Bachelor's Degree of Science and a Master's Degree in Accounting (with Distinction).
-              <br />
-              I have been learning programming for about 2 years now, and each day I am becoming a bit better at it and a bit more passionate about it.
-              I enjoy programming in  
-              <Tooltip title={<Typography>Of course, this includes HTML5 and CSS3.</Typography>}><span className={classes.link}> JavaScript/Typescript</span></Tooltip>, <span className={classes.emphasis}>C#</span> and <span className={classes.emphasis}>Java</span>, 
-              and I have also written code in <span className={classes.emphasis}>C</span>, <span className={classes.emphasis}>Ruby</span> and <span className={classes.emphasis}>SML</span>.
-              I am familiar with <span className={classes.emphasis}>React</span> and <span className={classes.emphasis}>.Net Core</span>, and I am hoping to become a <span className={classes.emphasis}>full-stack developer</span> in the near future.
-              <br /><br />
-              I created this web page using React with Typescript. This is a chronological introduction of myself that I hope may help you know more about me. 
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                👋 Hello! Thank you for visiting this web page. 🎉 
+                <br />
+                My name is <span className={classes.emphasis}>Yihao Wang</span>. I am a recent graduate  
+                from the University of Auckland with a <span className={classes.emphasis}>Post-Graduate Certificate in IT</span>. 
+                Before this, I also got a Bachelor's Degree of Science and a Master's Degree in Accounting (with Distinction).
+                <br />
+                I have been learning programming for about 2 years now, and each day I am becoming a bit better at it and a bit more passionate about it.
+                I enjoy programming in  
+                <Tooltip title={<Typography>Of course, this includes HTML5 and CSS3.</Typography>}><span className={classes.link}> JavaScript/Typescript</span></Tooltip>, <span className={classes.emphasis}>C#</span> and <span className={classes.emphasis}>Java</span>, 
+                and I have also written code in <span className={classes.emphasis}>C</span>, <span className={classes.emphasis}>Ruby</span> and <span className={classes.emphasis}>SML</span>.
+                I am familiar with <span className={classes.emphasis}>React</span> and <span className={classes.emphasis}>.Net Core</span>, and I am hoping to become a <span className={classes.emphasis}>full-stack developer</span> in the near future.
+                <br /><br />
+                I created this web page using React with Typescript. This is a chronological introduction of myself that I hope may help you know more about me. 
+              </div>
             </div>
           </Fade>
           <Fade up>
@@ -303,7 +320,7 @@ export default function Content() {
                 I took some time to get myself familiar with <span className={classes.emphasis}> Typescript </span>, <span className={classes.emphasis}> React </span>, <span className={classes.emphasis}> .Net Core </span> and <span className={classes.emphasis}> Azure </span>, 
                 in order to make myself feel ready to start out as a developer in the industry.
                 <br /><br />
-                During my learning of programming, I have made some projects which I am proud of, and I would like to share these with you.
+                During my learning of programming, I have made some projects which I am proud of, and I would like to share some of these with you. 😃
               </div>
             </div>
           </Fade>
@@ -313,7 +330,7 @@ export default function Content() {
         </section>
       </section>
       <section id="nandToTetris">
-        <section className={classes.page}>
+      <section className={classes.page}>
           <Fade up>
             <div className={classes.titleWrapper}>
               <span>
@@ -323,6 +340,37 @@ export default function Content() {
                 Nand to Tetris
             <span className={classes.subTitle}>- A computer built from scratch</span>
               </span>
+            </div>
+          </Fade>
+          <Fade>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                This is the project that I built along the course Nand to Tetris.
+                It consists of 12 sub-projects, which, when fitted together, make a complete computer built from scratch.
+                These include logic gates, the ALU and CPU, the machine language, the assembly language and the assembler, the virtual machine, 
+                the high-level language and its compiler, the OS and finally a game that runs on this computer.
+                <br /><br />
+                I built this during my master's degree. It gave me good understanding of many fundamental concepts in computer science, as well as 
+                encouraged me to explore more.
+              </div>
+            </div>
+          </Fade>
+        </section>
+        <section className={classes.page}>
+          <Fade>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                <br />
+                This is the final part of this project - an RPG game called Magic Tower. 
+                <br />
+                Despite it looks primitive, it was built completely from scratch - I mean, from hardware logic, to machine language,
+                to assembly language, to virtual machine and the high level language which runs on it, to the pixel-level rendering on the screen, 
+                and finally to the game logic - all were built on my own.
+              </div>
+              <iframe className={classes.media} frameBorder={0} src="https://www.youtube.com/embed/03VlOt-UVdA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; full-screen" allowFullScreen></iframe>
+              <div className={classes.description}>
+                You can have a look at the repository, and know more about this project on its official site.
+              </div>
             </div>
           </Fade>
         </section>
@@ -340,6 +388,20 @@ export default function Content() {
               </span>
             </div>
           </Fade>
+          <Fade up>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                div is the interpreter of a minimal programming language, written in only 500 lines of JavaScript code.
+                It is an experimental project which tried to answer the popular question: "is HTML a programming language?"
+                My answer to it is, yes, if you write an interpreter for it. 
+                <br />
+                Any valid div code is also a valid HTML5 file (syntax-wise). You can insert this piece of code 
+                using the &lt;script&gt; tag on a HTML5 file. And then it will treat the HTML elements on the page as the syntax tree.
+                The end result is a Lisp-like functional programming language, which supports recursion and closure. It is 
+                theoretically Turing-complete. You can have a look at the source code, the language specification and some demos here.
+              </div>
+            </div>
+          </Fade>
         </section>
       </section>
       <section id="keyPoint">
@@ -355,6 +417,19 @@ export default function Content() {
               </span>
             </div>
           </Fade>
+          <Fade up>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                KeyPoint is a blogging website. This is the final project of the PGCertIT program.
+                It used MariaDB for the database, JSP and Servlet for the backend, HTML, CSS, JavaScript, Bootstrap and jQuery for the frontend, 
+                and git and GitLab for version control and cooperation.
+              </div>
+              <img className={classes.media} src={keyPoint}></img>
+              <div className={classes.description}>
+                You can find the source code and more detailed description in this repository.
+              </div>
+            </div>
+          </Fade>
         </section>
       </section>
       <section id="colorfulLife">
@@ -368,6 +443,20 @@ export default function Content() {
                 Colorful Life
             <span className={classes.subTitle}>- Generative art base on Game of Life</span>
               </span>
+            </div>
+          </Fade>
+          <Fade up>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                Colorful Life is a zero-player game based on Conway's Game of Life. 
+                It is different from the original game in that in this game, everything is configurable, including all game veriables and styles of the cells. 
+              </div>
+              <img className={classes.media} src={game}></img>
+              <div className={classes.description}>
+                I used TypeScript, React and Material-UI for building this project. The project can be used as a kind of generative art. 
+                You can play with it to achieve various visual effects. 
+                You can try it on this deployed version, or have look at the source code and some interesting examples.
+              </div>
             </div>
           </Fade>
         </section>
