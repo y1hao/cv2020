@@ -240,7 +240,8 @@ export default function Content() {
                 <br /><br /> 
                 I began studying towards a <span className={classes.emphasis}> Master's Degree in Professional Accounting </span> in <span className={classes.emphasis}> Victoria University of Wellington </span>.
                 Accounting was a completely new area for me, but I managed to graduate with <span className={classes.emphasis}> distinction </span>. 
-                Because of my good academic performance, I recieved CPA Austraia Award and Top Student, Master of Professional Accounting Award.
+                Because of my good academic performance, I recieved <a className={classes.link} href="https://www.wgtn.ac.nz/scholarships/annual-prizes/prize-details?result_1736977_result_page=248" target="_blank"> MPA Award - CPA Australia Prize 2019 </a> 
+                and <a className={classes.link} href="https://www.wgtn.ac.nz/business/about/news/business-school-celebrates-top-students" target="_blank">2019 Wellington School of Business and Government Top Student Award for the Master of Professional Accounting</a>.
                 <br /><br />
                 Despite that I am no longer looking for a job in accounting now, I still regard these as great encouragement to me.
                 They show that I am able to <span className={classes.emphasis}> learn new things well and quickly </span>, and most importantly, that I enjoy doing so.
@@ -252,14 +253,16 @@ export default function Content() {
           <Fade up>
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
+                <br /><br /><br />
                 It was during this period of time that I made up my mind to <span className={classes.emphasis}> become a professional developer </span>.
-                I found myself more interested in understanding how a piece of accounting software worked than learning how to use it, 
-                automating things with programs than memorising the rules, and solving problems with passion and creativity than blindly obeying authorities.
+                I found myself more interested in understanding how a piece of accounting software worked than in learning how to use it, 
+                in automating things with programs than in memorising the rules, and in solving problems with passion and creativity than in repeated works.
                 <br /><br />
                 So, in the last two trimesters of program, I started seriously learning programming on my own. I got myself familiar with 
                 <span className={classes.emphasis}> HTML </span>, <span className={classes.emphasis}> CSS </span> and <span className={classes.emphasis}> JavaScript </span>. 
                 I studied through K&R's awesome book <span className={classes.emphasis}> The C Programming Language </span>. I also took a wonderful course 
-                on Coursera on computer architecture and compilers - From Nand to Tetris, which is one of the top courses on that platform.
+                on Coursera on computer architecture and compilers - <a className={classes.link} href="https://coursera.org/share/bf6bd6231e4178c5aaff434b592c063b" target="_blank"> From Nand to Tetris </a>, 
+                which is one of the top courses on that platform.
               </div>
             </div>
           </Fade>
@@ -281,11 +284,12 @@ export default function Content() {
           <Fade up>
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
+                <br />
                 Wanting to learn more of programming, I enrolled in the <span className={classes.emphasis}> Post-Graduate Certificate in Information Technology </span> program in <span className={classes.emphasis}> University of Auckland </span>.
-                This program consisted of two courses: Programming for Industry which taught Java, and Web Technologies which taught HTML, CSS, JavaScript and Git.
+                This program consisted of two courses: Programming for Industry which taught Java, and Web Technologies which taught <span className={classes.emphasis}> HTML </span>, <span className={classes.emphasis}> CSS </span>, <span className={classes.emphasis}> JavaScript </span> and <span className={classes.emphasis}> Git </span>.
                 <br /><br />
-                As I was already familiar with some of these topics, I used my spare time to learn more. I finished Princeton University's <span className={classes.emphasis}> Algorithms </span> and Washington University's 
-                <span className={classes.emphasis}> Programming Languages </span> (which taught functional programming) on Coursera. And I also learned some C#.
+                As I was already familiar with some of these topics, I used my spare time to learn more. I finished Princeton University's <a className={classes.link} href="https://github.com/CoderYihaoWang/PrincetonAlgorithms" target="_blank"> Algorithms </a> and Washington University's 
+                <a className={classes.link} href="https://coursera.org/share/0ab6c95f691aba7e194065c02a5637e4" target="_blank"> Programming Languages </a> (which taught functional programming) on Coursera. And I also learned some <span className={classes.emphasis}>C#</span>.
               </div>
             </div>
           </Fade>
@@ -294,6 +298,7 @@ export default function Content() {
           <Fade up>
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
+                <br /><br /><br /><br />
                 I graduated with <span className={classes.emphasis}> A+ </span> on both courses. After graduation, 
                 I took some time to get myself familiar with <span className={classes.emphasis}> Typescript </span>, <span className={classes.emphasis}> React </span>, <span className={classes.emphasis}> .Net Core </span> and <span className={classes.emphasis}> Azure </span>, 
                 in order to make myself feel ready to start out as a developer in the industry.
