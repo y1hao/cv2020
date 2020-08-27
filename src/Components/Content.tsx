@@ -103,7 +103,7 @@ export default function Content() {
           fontSize: '2vw'
         },
         [theme.breakpoints.down('xs')]: {
-          fontSize: '3.2vw'
+          fontSize: '5vw'
         }
       },
       emphasis: {
