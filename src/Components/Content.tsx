@@ -87,7 +87,7 @@ export default function Content() {
         }
       },
       contentWrapper: {
-        paddingTop: '8vh',
+        paddingTop: '5vh',
         width: '80%',
         margin: 'auto'
       },
@@ -169,15 +169,15 @@ export default function Content() {
                 <br />
                 My name is <span className={classes.emphasis}>Yihao Wang</span>. I am a recent graduate  
                 from the University of Auckland with a <span className={classes.emphasis}>Post-Graduate Certificate in IT</span>. 
-                Before this, I also got a Bachelor's Degree of Science and a Master's Degree in Accounting (with Distinction).
+                Prior to this, I also got a Bachelor's Degree in Science and a Master's Degree in Accounting (with Distinction).
                 <br />
                 I have been learning programming for about 2 years now, and each day I am becoming a bit better at it and a bit more passionate about it.
                 I enjoy programming in  
-                <Tooltip title={<Typography>Of course, this includes HTML5 and CSS3.</Typography>}><span className={classes.link}> JavaScript/Typescript</span></Tooltip>, <span className={classes.emphasis}>C#</span> and <span className={classes.emphasis}>Java</span>, 
-                and I have also written code in <span className={classes.emphasis}>C</span>, <span className={classes.emphasis}>Ruby</span> and <span className={classes.emphasis}>SML</span>.
-                I am familiar with <span className={classes.emphasis}>React</span> and <span className={classes.emphasis}>.Net Core</span>, and I am hoping to become a <span className={classes.emphasis}>full-stack developer</span> in the near future.
+                <Tooltip title={<Typography>Of course, this includes HTML5 and CSS3.</Typography>}><span className={classes.link}> JavaScript/Typescript </span></Tooltip>, <span className={classes.emphasis}> C# </span>, 
+                and I have also written code in <span className={classes.emphasis}> Java </span> and <span className={classes.emphasis}> C </span>.
+                I am familiar with <span className={classes.emphasis}> Node.js </span>, <span className={classes.emphasis}>React</span> and <span className={classes.emphasis}>.Net Core</span>, and I am hoping to become a <span className={classes.emphasis}>full-stack developer</span> in the near future.
                 <br /><br />
-                I created this web page using React with Typescript. This is a chronological introduction of myself that I hope may help you know more about me. 
+                I created this web page using React with Typescript and Material-UI. This is a chronological introduction of myself that I hope will help you know more about me. 
               </div>
             </div>
           </Fade>
@@ -303,7 +303,7 @@ export default function Content() {
               <div className={classes.description}>
                 <br />
                 Wanting to learn more of programming, I enrolled in the <span className={classes.emphasis}> Post-Graduate Certificate in Information Technology </span> program in <span className={classes.emphasis}> University of Auckland </span>.
-                This program consisted of two courses: Programming for Industry which taught Java, and Web Technologies which taught <span className={classes.emphasis}> HTML </span>, <span className={classes.emphasis}> CSS </span>, <span className={classes.emphasis}> JavaScript </span> and <span className={classes.emphasis}> Git </span>.
+                This program consisted of two courses: <span className={classes.emphasis}> Programming for Industry </span> which taught <span className={classes.emphasis}> Java </span>, and <span className={classes.emphasis}> Programming with Web Technologies </span> which taught <span className={classes.emphasis}> HTML </span>, <span className={classes.emphasis}> CSS </span>, <span className={classes.emphasis}> JavaScript </span> and <span className={classes.emphasis}> Git </span>.
                 <br /><br />
                 As I was already familiar with some of these topics, I used my spare time to learn more. I finished Princeton University's <a className={classes.link} href="https://github.com/CoderYihaoWang/PrincetonAlgorithms" target="_blank"> Algorithms </a> and Washington University's 
                 <a className={classes.link} href="https://coursera.org/share/0ab6c95f691aba7e194065c02a5637e4" target="_blank"> Programming Languages </a> (which taught functional programming) on Coursera. And I also learned some <span className={classes.emphasis}>C#</span>.
@@ -363,11 +363,11 @@ export default function Content() {
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
                 <br /><br />
-                This is the final part of this project - an RPG game called <span className={classes.emphasis}> Magic Tower </span>. 
+                This is the final part of this project - an RPG game I designed called <span className={classes.emphasis}> Magic Tower </span>. 
                 <br />
                 Despite it looks primitive, it was built completely from scratch - I mean, from hardware logic, to machine language,
-                to assembly language, to virtual machine and the high level language which runs on it, to the pixel-level rendering on the screen, 
-                and finally to the game logic - all were built on my own.
+                to assembly language, to virtual machine and the high level language, to the pixel-level rendering on the screen, 
+                and finally to the game logic - I needed to build all of them.
               </div>
               <iframe className={classes.media} frameBorder={0} src="https://www.youtube.com/embed/03VlOt-UVdA" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; full-screen" allowFullScreen></iframe>
               <div className={classes.description}>
@@ -458,7 +458,7 @@ export default function Content() {
               <img className={classes.media} src={game}></img>
               <div className={classes.description}>
                 I used <span className={classes.emphasis}> TypeScript </span>, <span className={classes.emphasis}> React </span> and <span className={classes.emphasis}> Material-UI </span> for building this project. The project can be used as a kind of generative art. 
-                You can play with it to achieve various visual effects. 
+                You can play with it to generate various visual patterns. 
                 You can try it on this <a className={classes.link} target="_blank" href="https://coderyihaowang.github.io/ColorfulLife/"> deployed version </a>, or have look at the <a className={classes.link} target="_blank" href="https://github.com/CoderYihaoWang/ColorfulLife"> source code and some interesting examples </a>.
               </div>
             </div>
@@ -473,14 +473,15 @@ export default function Content() {
           <Fade up>
             <div className={classes.contentWrapper}>
               <div className={classes.description}>
-                I am always learning something. At the moment, I am exploring <span className={classes.emphasis}> EF Core </span> and building a project with <span className={classes.emphasis}> EF Core </span>,
+                I am always learning something. At the moment, I am exploring <span className={classes.emphasis}> EF Core </span> and trying to build a project with <span className={classes.emphasis}> EF Core </span>,
                  <span className={classes.emphasis}> .Net Core </span> and <span className={classes.emphasis}> React </span>.
                 <br /><br />
                 At the same time, <span className={classes.emphasis}> I am actively looking for a job </span>. My aim is to become an excellent <span className={classes.emphasis}> full-stack developer </span> in the near future. 
                 Currently, I am looking for a job as a <span className={classes.emphasis}>junior</span>|<span className={classes.emphasis}>graduate </span> <span className={classes.emphasis}>frontend</span>|<span className={classes.emphasis}>backend</span>|<span className={classes.emphasis}>full-stack </span> developer. Depending on the opportunity, I am also 
                 open to <span className={classes.emphasis}> internships </span> or <span className={classes.emphasis}> volunteering </span> positions.
                 <br /><br />
-                Thank you for reading thus far. I am looking forward to hearing from you!
+                Thank you for reading thus far. If you are interested, please contact me. I am looking forward to hearing from you. 
+                And I hope you have a good rest of the day. 😃 
               </div>  
             </div>
           </Fade>
