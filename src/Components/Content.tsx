@@ -466,6 +466,19 @@ export default function Content() {
           <Fade up>
             <span className={classes.largeTitle}>About Future</span>
           </Fade>
+          <Fade up>
+            <div className={classes.contentWrapper}>
+              <div className={classes.description}>
+                I am always learning something. At the moment, I am exploring EF Core and building a project with EF Core, .Net Core and React.
+                <br /><br />
+                At the same time, I am actively looking for a job. My aim is to become an excellent full-stack developer in the near future. 
+                Currently, I am looking for a job as a junior|graduate frontend|backend|full-stack developer. Depending on the opportunity, I am also 
+                open to internships or volunteering positions.
+                <br /><br />
+                Thank you for reading thus far. I am looking forward to hearing from you!
+              </div>  
+            </div>
+          </Fade>
         </section>
       </section>
     </div>
