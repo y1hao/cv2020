@@ -20,7 +20,9 @@ export default function Content() {
         position: 'relative',
         [theme.breakpoints.down('sm')]: {
           paddingTop: 50,
-          minHeight: 'calc(100vh - 50px)'
+          minHeight: 'calc(100vh - 50px)',
+          scrollSnapAlign: 'none',
+          minHeight: 0
         }
       },
       sectionName: {
