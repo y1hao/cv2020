@@ -257,8 +257,8 @@ export default function Content() {
                 <br /><br /> 
                 I began studying towards a <span className={classes.emphasis}> Master's Degree in Professional Accounting </span> in <span className={classes.emphasis}> Victoria University of Wellington </span>.
                 Accounting was a completely new area for me, but I managed to graduate with <span className={classes.emphasis}> distinction </span>. 
-                Because of my good academic performance, I recieved <a className={classes.link} href="https://www.wgtn.ac.nz/scholarships/annual-prizes/prize-details?result_1736977_result_page=248" target="_blank"> MPA Award - CPA Australia Prize 2019 </a> 
-                and <a className={classes.link} href="https://www.wgtn.ac.nz/business/about/news/business-school-celebrates-top-students" target="_blank">2019 Wellington School of Business and Government Top Student Award for the Master of Professional Accounting</a>.
+                Because of my good academic performance, I recieved <a className={classes.link} href="https://www.wgtn.ac.nz/business/about/news/business-school-celebrates-top-students" target="_blank"> 2019 Wellington School of Business and Government Top Student Award for the Master of Professional Accounting </a> 
+                and <a className={classes.link} href="https://www.wgtn.ac.nz/scholarships/annual-prizes/prize-details?result_1736977_result_page=248" target="_blank"> MPA Award - CPA Australia Prize 2019 </a> .
                 <br /><br />
                 Despite that I am no longer looking for a job in accounting now, I still regard these as great encouragement to me.
                 They show that I am able to <span className={classes.emphasis}> learn new things well and quickly </span>, and most importantly, that I enjoy doing so.
