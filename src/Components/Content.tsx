@@ -1,5 +1,5 @@
 import React from 'react';
-import { makeStyles, Theme, createStyles, Tooltip, Typography } from '@material-ui/core';
+import { makeStyles, Theme, createStyles, Tooltip, Typography, Hidden } from '@material-ui/core';
 import { SignalWifi1BarLockSharp, DriveEta } from '@material-ui/icons';
 import game from '../images/game.png';
 import keyPoint from '../images/KeyPoint.png';
@@ -20,9 +20,8 @@ export default function Content() {
         position: 'relative',
         [theme.breakpoints.down('sm')]: {
           paddingTop: 50,
-          minHeight: 'calc(100vh - 50px)',
-          scrollSnapAlign: 'none',
-          minHeight: 0
+          minHeight: 0,
+          scrollSnapAlign: 'none'
         }
       },
       sectionName: {
@@ -183,9 +182,11 @@ export default function Content() {
               </div>
             </div>
           </Fade>
-          <Fade up>
-            <div className={classes.transition}>👇 Scroll down to know more about my education background</div>
-          </Fade>
+          <Hidden xsDown>
+            <Fade up>
+              <div className={classes.transition}>👇 Scroll down to know more about my education background</div>
+            </Fade>
+          </Hidden>
         </section>
       </section>
       <section id="pekingUniversity">
@@ -326,9 +327,11 @@ export default function Content() {
               </div>
             </div>
           </Fade>
-          <Fade up>
-            <div className={classes.transition}>👇 Scroll down to know more about my programming projects</div>
-          </Fade>
+          <Hidden xsDown>
+            <Fade up>
+              <div className={classes.transition}>👇 Scroll down to know more about my programming projects</div>
+            </Fade>
+          </Hidden>
         </section>
       </section>
       <section id="nandToTetris">
