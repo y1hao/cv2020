@@ -20,7 +20,7 @@ export default function TopBar(props: IProps) {
             <Menu />
           </IconButton>
           <Typography variant="h6" >
-            Yihao Wang's CV
+            Yihao Wang's Profile
           </Typography>
         </Toolbar>
       </AppBar>
