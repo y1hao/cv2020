@@ -2,7 +2,7 @@
   "name": "cv2020",
   "version": "1.0.0",
   "private": true,
-  "homepage": "https://coderyihaowang.github.io",
+  "homepage": "https://coderyihaowang.github.io/cv2020",
   "dependencies": {
     "@material-ui/core": "^4.11.0",
     "@material-ui/icons": "^4.9.1",
