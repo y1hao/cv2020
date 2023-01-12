@@ -1,3 +1,3 @@
 # My Profile
 
-**Hello!** Welcome to my profile. It is deployed [here](https://coderyihaowang.github.io/cv2020/).
+**Hello!** Welcome to my profile. It is deployed [here](https://y1hao.github.io/cv2020/).
